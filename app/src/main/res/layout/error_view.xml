@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/errorContainer"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:padding="@dimen/dimen15dip"
+  android:gravity="center"
+  android:isScrollContainer="true"
+  android:visibility="gone"
+  tools:visibility="visible"
+  tools:showIn="@layout/fragment_features"
+>
+
+  <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_network_error"
+    android:contentDescription="@string/basis_content_description"
+  />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:text="@string/error_message"
+    android:layout_marginTop="@dimen/dimen20dip"
+    android:layout_marginBottom="@dimen/dimen20dip"
+    style="@style/Widget.TextView.GeneralTextColor"
+  />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/action_retry"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="@dimen/dimen15dip"
+    style="@style/Widget.TextView.SecondaryTextColor"
+  />
+
+  <Button
+    android:id="@+id/retryButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen20dip"
+    android:text="@string/refresh"
+    android:background="@drawable/bg_ripple_blue"
+    style="@style/Widget.Button"
+    android:paddingLeft="@dimen/dimen55dip"
+    android:paddingRight="@dimen/dimen55dip"
+  />
+
+</LinearLayout>
+

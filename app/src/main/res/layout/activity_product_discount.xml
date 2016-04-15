@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ProductDiscountActivity"
+>
+
+  <RelativeLayout
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dimen15dip"
+    android:paddingRight="@dimen/dimen15dip"
+    android:paddingBottom="@dimen/dimen15dip"
+    android:layout_alignParentBottom="true"
+  >
+
+    <Button
+      android:id="@+id/applyDiscountButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/product_discount_apply_discount_title"
+      android:background="@drawable/bg_ripple_orange"
+      android:layout_marginBottom="@dimen/dimen5dip"
+      style="@style/Widget.Button"
+    />
+
+    <Button
+      android:id="@+id/removeDiscountButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/product_discount_remove_discount_title"
+      android:background="@drawable/bg_ripple_purple"
+      android:layout_marginBottom="@dimen/dimen5dip"
+      android:visibility="gone"
+      style="@style/Widget.Button"
+    />
+
+  </RelativeLayout>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/footer"
+  >
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:paddingTop="@dimen/dimen20dip"
+      android:paddingLeft="@dimen/dimen15dip"
+      android:paddingRight="@dimen/dimen15dip"
+      android:paddingBottom="@dimen/dimen15dip"
+    >
+
+      <include layout="@layout/product_header_view" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/product_prize_title"
+        android:layout_marginTop="@dimen/dimen20dip"
+        style="@style/Widget.TextView.Product.Prize.Title"
+      />
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen2dip"
+        android:gravity="center_vertical"
+      >
+        <TextView
+          android:id="@+id/prizeTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          style="@style/Widget.TextView.Product.Prize"
+          tools:text="@string/product_prize"
+        />
+
+        <TextView
+          android:id="@+id/prizeDiscountTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/dimen15dip"
+          android:visibility="invisible"
+          style="@style/Widget.TextView.Product.Prize.Discount"
+          tools:text="$764"
+          tools:visibility="visible"
+        />
+
+        <TextView
+          android:id="@+id/discountTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/dimen15dip"
+          android:paddingLeft="@dimen/dimen8dip"
+          android:paddingTop="@dimen/dimen6dip"
+          android:paddingRight="@dimen/dimen8dip"
+          android:paddingBottom="@dimen/dimen6dip"
+          android:background="@color/orange"
+          android:visibility="invisible"
+          style="@style/Widget.TextView.Product.Purchase.Text.1"
+          tools:text="15 % off"
+          tools:visibility="visible"
+        />
+
+      </LinearLayout>
+
+    </LinearLayout>
+  </ScrollView>
+
+  <include layout="@layout/engagement_notification_overlay"/>
+
+</RelativeLayout>

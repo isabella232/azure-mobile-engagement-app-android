@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <stroke android:color="@android:color/transparent"/>
+
+  <padding
+    android:top="@dimen/dimen7dip"
+    android:bottom="@dimen/dimen7dip"
+  />
+
+  <corners android:radius="0dp"/>
+
+</shape>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item
+    android:id="@+id/menu_home"
+    android:icon="@drawable/ic_menu_home"
+    android:title="@string/menu_home_title"
+    android:checkable="true"
+  />
+
+  <item android:title="@string/menu_section_product_resources">
+    <menu>
+      <group android:id="@+id/menu_group1">
+
+        <item
+          android:id="@+id/menu_features"
+          android:icon="@drawable/ic_menu_features"
+          android:title="@string/menu_features_title"
+          android:checkable="true"
+        />
+
+        <item
+          android:id="@+id/menu_videos"
+          android:icon="@drawable/ic_menu_videos"
+          android:title="@string/menu_videos_title"
+          android:checkable="true"
+        />
+
+        <item
+          android:id="@+id/menu_helpful_links"
+          android:icon="@drawable/ic_menu_helpful_links"
+          android:title="@string/menu_helpful_links_title"
+          android:checkable="true"
+        />
+
+        <item
+          android:id="@+id/menu_recent_product_updates"
+          android:icon="@drawable/ic_menu_recent_product_updates"
+          android:title="@string/menu_recent_product_updates_title"
+          android:checkable="true"
+        />
+
+        <item
+          android:id="@+id/menu_twitter"
+          android:icon="@drawable/ic_menu_twitter"
+          android:title="@string/menu_twitter_title"
+          android:checkable="false"
+        />
+
+        <item
+          android:id="@+id/menu_demo_app_backend"
+          android:icon="@drawable/ic_menu_demo_app_backend"
+          android:title="@string/menu_application_backend_title"
+          android:checkable="false"
+        />
+
+      </group>
+    </menu>
+  </item>
+
+  <group android:id="@+id/menu_group2">
+    <item
+      android:id="@+id/menu_get_device_id"
+      android:icon="@drawable/ic_menu_get_device_id"
+      android:title="@string/menu_get_device_id_title"
+      android:checkable="true"
+    />
+  </group>
+
+  <item android:title="@string/menu_section_sample_notifications">
+    <menu>
+      <group android:id="@+id/menu_group3">
+
+        <item
+          android:id="@+id/menu_out_of_app"
+          android:icon="@drawable/ic_menu_out_of_app"
+          android:title="@string/menu_out_of_app_title"
+          android:checkable="true"
+        />
+
+        <item
+          android:id="@+id/menu_in_app"
+          android:icon="@drawable/ic_menu_in_app"
+          android:title="@string/menu_in_app_title"
+          android:checkable="true"
+        />
+
+        <item
+          android:id="@+id/menu_in_app_popup"
+          android:icon="@drawable/ic_menu_in_app_popup"
+          android:title="@string/menu_in_app_pop_up_title"
+          android:checkable="true"
+        />
+
+        <item
+          android:id="@+id/menu_web_announcement"
+          android:icon="@drawable/ic_menu_full_screen"
+          android:title="@string/menu_web_announcement_title"
+          android:checkable="true"
+        />
+
+        <item
+          android:id="@+id/menu_full_screen"
+          android:icon="@drawable/ic_menu_full_screen"
+          android:title="@string/menu_full_screen_title"
+          android:checkable="true"
+        />
+
+        <item
+          android:id="@+id/menu_poll_survey"
+          android:icon="@drawable/ic_menu_poll"
+          android:title="@string/menu_poll_survey_title"
+          android:checkable="true"
+        />
+
+        <item
+          android:id="@+id/menu_data_push"
+          android:icon="@drawable/ic_menu_data_push"
+          android:title="@string/menu_data_push_title"
+          android:checkable="true"
+        />
+      </group>
+    </menu>
+  </item>
+
+  <group android:id="@+id/menu_group4">
+    <item
+      android:id="@+id/menu_about"
+      android:icon="@drawable/ic_menu_about"
+      android:title="@string/menu_about_title"
+      android:checkable="true"
+    />
+  </group>
+
+</menu>

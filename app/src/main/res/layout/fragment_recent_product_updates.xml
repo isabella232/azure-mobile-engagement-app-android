@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/creamWhite"
+  tools:showIn="@layout/activity_recent_product_updates"
+  tools:context=".fragment.RecentProductUpdatesFragment"
+>
+
+  <include
+    android:id="@+id/toolbarHeaderView"
+    layout="@layout/toolbar_header"
+  />
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbarHeaderView"
+  >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+      android:id="@+id/swipeRefreshLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+    >
+      <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+      />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+      android:id="@+id/progressBar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+    />
+
+    <include layout="@layout/error_view"/>
+
+  </RelativeLayout>
+
+</RelativeLayout>

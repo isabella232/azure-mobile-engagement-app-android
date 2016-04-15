@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<resources>
+
+  <!-- Base application theme. -->
+  <style
+    name="AppTheme"
+    parent="Theme.AppCompat.Light.DarkActionBar"
+  >
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="titleTextColor">@android:color/white</item>
+    <item name="alertDialogTheme">@style/Dialog.Alert</item>
+    <item name="android:windowBackground">@color/textColorPrimary</item>
+    <item name="android:radioButtonStyle">@style/Widget.CompoundButton.RadioButton</item>
+    <!-- Support library compatibility -->
+    <item name="radioButtonStyle">@style/Widget.CompoundButton.RadioButton</item>
+  </style>
+
+  <style
+    name="AppTheme.Overlay"
+    parent="AppTheme"
+  >
+    <item name="android:windowActionBarOverlay">true</item>
+    <!-- Support library compatibility -->
+    <item name="windowActionBarOverlay">true</item>
+  </style>
+
+  <style
+    name="AppTheme.Transparent"
+    parent="@style/Theme.AppCompat.Light"
+  >
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="alertDialogTheme">@style/Dialog.Alert</item>
+  </style>
+
+  <style
+    name="AppTheme.NavigationView"
+    parent="AppTheme"
+  >
+    <item name="colorPrimary">@color/generalTextColor</item>
+  </style>
+
+  <style
+    name="AppTheme.NoActionBar"
+    parent="AppTheme"
+  >
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+
+    <item name="android:windowActionBarOverlay">true</item>
+    <!-- Support library compatibility -->
+    <item name="windowActionBarOverlay">true</item>
+  </style>
+
+  <style
+    name="AppTheme.VideoPlayer"
+    parent="AppTheme"
+  >
+    <item name="android:windowBackground">@color/black</item>
+    <item name="android:actionBarStyle">@style/AppTheme.VideoPlayer.ActionBarStyle</item>
+    <item name="android:windowActionBarOverlay">true</item>
+    <!-- Support library compatibility -->
+    <item name="actionBarStyle">@style/AppTheme.VideoPlayer.ActionBarStyle</item>
+    <item name="windowActionBarOverlay">true</item>
+  </style>
+
+  <style
+    name="AppTheme.VideoPlayer.ActionBarStyle"
+    parent="Widget.AppCompat.ActionBar.Solid"
+  >
+    <item name="android:background">@color/dimBlack</item>
+    <!-- Support library compatibility -->
+    <item name="background">@color/dimBlack</item>
+  </style>
+
+  <style
+    name="AppTheme.PopupOverlay"
+    parent="ThemeOverlay.AppCompat.Light"
+  />
+
+  <style
+    name="AppTheme.Toolbar"
+    parent="Base.ThemeOverlay.AppCompat.ActionBar"
+  >
+    <item name="colorControlNormal">@color/textColorPrimary</item>
+  </style>
+
+</resources>

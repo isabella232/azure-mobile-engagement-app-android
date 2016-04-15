@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<android.support.v7.widget.CardView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:card_view="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/cardView"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:foreground="?android:attr/selectableItemBackground"
+  card_view:cardUseCompatPadding="true"
+  card_view:cardElevation="@dimen/card_elevation"
+  card_view:cardCornerRadius="0dip"
+>
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  >
+
+    <LinearLayout
+      android:id="@+id/newContainer"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:paddingLeft="@dimen/dimen10dip"
+      android:paddingTop="@dimen/dimen15dip"
+      android:paddingRight="@dimen/dimen10dip"
+      android:paddingBottom="@dimen/dimen15dip"
+    >
+
+      <TextView
+        android:id="@+id/newUpdateTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.TextView.Item.Title.RcentUpdate"
+      />
+
+      <TextView
+        android:id="@+id/newUpdateDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.TextView.SmallMentionColor"
+      />
+
+      <TextView
+        android:id="@+id/newUpdateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/secondaryTextColor"
+        style="@style/Widget.TextView.SecondaryTextColor"
+      />
+
+    </LinearLayout>
+
+    <ProgressBar
+      android:id="@+id/progressBar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:indeterminate="true"
+      android:layout_centerInParent="true"
+      android:visibility="gone"
+    />
+
+    <LinearLayout
+      android:id="@+id/errorContainer"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:gravity="center"
+      android:padding="@dimen/dimen10dip"
+      android:background="@color/creamWhite"
+      android:visibility="gone"
+    >
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_feed_item_error_message"
+        android:layout_marginBottom="@dimen/dimen5dip"
+        style="@style/Widget.TextView.GeneralTextColor"
+      />
+
+      <Button
+        android:id="@+id/retryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/refresh"
+      />
+
+    </LinearLayout>
+
+  </RelativeLayout>
+</android.support.v7.widget.CardView>

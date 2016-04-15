@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/blueBackground"
+  tools:context=".PollFinishActivity"
+>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <Button
+      android:id="@+id/closeButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/close_button"
+      android:layout_alignParentBottom="true"
+      android:background="@drawable/bg_ripple_purple"
+      android:layout_marginLeft="@dimen/dimen15dip"
+      android:layout_marginRight="@dimen/dimen15dip"
+      android:layout_marginBottom="@dimen/dimen15dip"
+      style="@style/Widget.Button"
+    />
+
+    <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@id/closeButton"
+      android:paddingLeft="@dimen/dimen15dip"
+      android:paddingTop="@dimen/dimen15dip"
+      android:paddingRight="@dimen/dimen15dip"
+    >
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+      >
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/new_poll_end_message"
+          android:layout_marginLeft="@dimen/dimen25dip"
+          android:layout_marginRight="@dimen/dimen25dip"
+          android:drawableTop="@drawable/ic_poll_survey_like"
+          android:drawablePadding="@dimen/dimen20dip"
+          style="@style/Widget.TextView.Poll.Message"
+        />
+      </LinearLayout>
+
+    </ScrollView>
+
+  </RelativeLayout>
+
+  <include layout="@layout/engagement_notification_overlay"/>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<resources>
+
+  <color name="colorPrimary">#00ABEC</color>
+  <color name="colorPrimaryDark">#0089BD</color>
+  <color name="colorAccent">@color/orange</color>
+
+  <color name="black">@android:color/black</color>
+  <color name="dimBlack">#AA000000</color>
+  <color name="orange">#FF8C00</color>
+  <color name="orangePressed">#FFA333</color>
+  <color name="purple">#68217A</color>
+  <color name="purplePressed">#864D95</color>
+  <color name="buttonDisabledColor">#D4D4D4</color>
+  <color name="blueBackground">#33BCF0</color>
+  <color name="creamWhite">#F6F6F6</color>
+  <color name="customTabColor">#099CD3</color>
+  <color name="primaryPressed">#0089BD</color>
+
+  <color name="textColorPrimary">@android:color/white</color>
+  <color name="generalTextColor">#303030</color>
+  <color name="secondaryTextColor">#6A6A6A</color>
+  <color name="smallMentionColor">#A9A9A9</color>
+
+  <color name="footerDivider">#80FFFFFF</color>
+  <color name="helpulLinksDivider">#E5E5E5</color>
+
+  <color name="buttonColorPressed">#50FFFFFF</color>
+
+  <array name="refreshColors">
+    <item>@color/colorAccent</item>
+    <item>@color/colorPrimary</item>
+    <item>@color/purple</item>
+  </array>
+
+</resources>

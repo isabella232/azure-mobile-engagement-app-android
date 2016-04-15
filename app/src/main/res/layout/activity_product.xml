@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fillViewport="true"
+  tools:context=".ProductActivity"
+>
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  >
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingLeft="@dimen/dimen15dip"
+      android:paddingTop="@dimen/dimen20dip"
+      android:paddingRight="@dimen/dimen15dip"
+      android:paddingBottom="@dimen/dimen15dip"
+      android:orientation="vertical"
+    >
+
+      <include layout="@layout/product_header_view"/>
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/product_prize_title"
+        android:layout_marginTop="@dimen/dimen15dip"
+        style="@style/Widget.TextView.Product.Prize.Title"
+      />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/product_prize"
+        android:layout_marginTop="@dimen/dimen2dip"
+        style="@style/Widget.TextView.Product.Prize"
+      />
+
+      <LinearLayout
+        android:id="@+id/discountView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:layout_marginTop="@dimen/dimen15dip"
+        android:paddingLeft="@dimen/dimen10dip"
+        android:paddingTop="@dimen/dimen8dip"
+        android:paddingRight="@dimen/dimen10dip"
+        android:paddingBottom="@dimen/dimen10dip"
+        android:orientation="vertical"
+      >
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/product_purchase_text_1"
+          style="@style/Widget.TextView.Product.Purchase.Text.1"
+        />
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/product_purchase_text_2"
+          style="@style/Widget.TextView.Product.Purchase.Text.2"
+        />
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/engagement_notification_overlay"/>
+
+  </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:paddingTop="@dimen/dimen40dip"
+>
+
+  <TextView
+    android:id="@+id/question_title"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:textColor="@android:color/white"
+    android:textStyle="bold"
+    android:textSize="@dimen/dimen16dip"
+  />
+
+  <RadioGroup
+    android:id="@+id/choices"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen15dip"
+  />
+
+</LinearLayout>
