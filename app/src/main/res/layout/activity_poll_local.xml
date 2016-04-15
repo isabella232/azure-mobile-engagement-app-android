@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/blueBackground"
+  tools:context=".PollLocalActivity"
+>
+
+  <LinearLayout
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dimen15dip"
+    android:paddingRight="@dimen/dimen15dip"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+  >
+
+    <Button
+      android:id="@+id/cancelButton"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="@string/negative_button"
+      android:background="@drawable/bg_ripple_blue"
+      android:layout_marginBottom="@dimen/dimen15dip"
+      style="@style/Widget.Button"
+    />
+
+    <Button
+      android:id="@+id/submitButton"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="@string/new_poll_submit_title"
+      android:background="@drawable/bg_ripple_purple"
+      android:layout_marginLeft="@dimen/dimen10dip"
+      android:layout_marginBottom="@dimen/dimen15dip"
+      android:enabled="false"
+      style="@style/Widget.Button"
+      tools:enabled="true"
+    />
+
+  </LinearLayout>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dimen15dip"
+    android:paddingTop="@dimen/dimen20dip"
+    android:paddingRight="@dimen/dimen15dip"
+    android:layout_above="@id/footer"
+  >
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+    >
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/poll_mention_text"
+        android:textStyle="bold"
+        style="@style/Widget.TextView.Push.SmallMessage"
+        android:layout_gravity="left"
+      />
+
+      <TextView
+        android:id="@+id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web|email|map"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen20dip"
+        android:text="@string/new_poll_description"
+        android:layout_marginTop="@dimen/dimen15dip"
+      />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen40dip"
+        android:orientation="vertical"
+      >
+
+        <TextView
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:textColor="@android:color/white"
+          android:textStyle="bold"
+          android:textSize="@dimen/dimen16dip"
+          android:text="@string/new_poll_question_title_1"
+         />
+
+        <RadioGroup
+          android:id="@+id/firstRadioGroup"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dimen15dip"
+        >
+
+          <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_poll_question_yes"
+          />
+
+          <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_poll_question_no"
+          />
+
+        </RadioGroup>
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen40dip"
+        android:orientation="vertical"
+      >
+
+        <TextView
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:textColor="@android:color/white"
+          android:textStyle="bold"
+          android:textSize="@dimen/dimen16dip"
+          android:text="@string/new_poll_question_title_2"
+        />
+
+        <RadioGroup
+          android:id="@+id/secondRadioGroup"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dimen15dip"
+        >
+
+          <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_poll_question_yes"
+          />
+
+          <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_poll_question_no"
+          />
+
+        </RadioGroup>
+
+      </LinearLayout>
+
+    </LinearLayout>
+  </ScrollView>
+
+</RelativeLayout>

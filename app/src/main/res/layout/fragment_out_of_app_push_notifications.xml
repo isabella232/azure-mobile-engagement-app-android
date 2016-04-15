@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/blueBackground"
+  tools:showIn="@layout/activity_main"
+  tools:context=".fragment.OutOfAppPushNotificationsFragment"
+>
+
+  <include
+    android:id="@+id/toolbarHeaderView"
+    layout="@layout/toolbar_header"
+  />
+
+  <include
+    android:id="@+id/footer"
+    layout="@layout/notification_scenarios_footer"
+  />
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/toolbarHeaderView"
+    android:layout_above="@id/footer"
+  >
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="@dimen/dimen15dip"
+    >
+
+      <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_out_of_app"
+        android:contentDescription="@string/basis_content_description"
+      />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/out_of_app_push_notifications_message"
+        android:layout_marginTop="@dimen/dimen10dip"
+        style="@style/Widget.TextView.Push.Message"
+      />
+
+      <Button
+        android:id="@+id/notificationOnlyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/out_of_app_push_notifications_notification_only_title"
+        android:layout_marginTop="@dimen/dimen15dip"
+        android:background="@drawable/bg_ripple_purple"
+        style="@style/Widget.Button"
+      />
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/out_of_app_push_notifications_notification_only_message"
+        android:layout_marginTop="@dimen/dimen10dip"
+        style="@style/Widget.TextView.Push.SmallMessage"
+       />
+
+      <include layout="@layout/separator_view"/>
+
+      <Button
+        android:id="@+id/announcementButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/out_of_app_push_notifications_announcement_title"
+        android:background="@drawable/bg_ripple_orange"
+        style="@style/Widget.Button"
+      />
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/out_of_app_push_notifications_announcement_message"
+        android:layout_marginTop="@dimen/dimen10dip"
+        style="@style/Widget.TextView.Push.SmallMessage"
+      />
+
+      <include layout="@layout/notification_scenarios_footer_mention"/>
+
+    </LinearLayout>
+  </ScrollView>
+
+</RelativeLayout>

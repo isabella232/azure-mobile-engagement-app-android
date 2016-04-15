@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ReboundActivity"
+>
+
+  <WebView
+    android:id="@+id/webView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+  />
+
+  <TextView
+    android:id="@+id/contentTextView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen10dip"
+    android:visibility="gone"
+  />
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/textColorPrimary"
+  >
+
+    <View
+      android:id="@+id/separator"
+      android:layout_width="match_parent"
+      android:layout_height="1dip"
+      android:background="@color/helpulLinksDivider"
+    />
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_below="@id/separator"
+      android:orientation="horizontal"
+      android:paddingRight="@dimen/dimen10dip"
+    >
+
+      <Button
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:background="?android:attr/selectableItemBackground"
+        tools:text="@string/close_button"
+      />
+
+      <Button
+        android:id="@+id/viewAllButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:background="?android:attr/selectableItemBackground"
+        tools:text="@string/home_recent_updates_view_all"
+      />
+
+    </LinearLayout>
+
+  </RelativeLayout>
+
+  <include layout="@layout/engagement_notification_overlay"/>
+
+</RelativeLayout>

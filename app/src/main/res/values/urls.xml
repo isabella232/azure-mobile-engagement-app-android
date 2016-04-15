@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<resources>
+
+  <!--Drawer links -->
+  <string name="drawer_features_url">http://aka.ms/azmefeatures</string>
+  <string name="drawer_twitter_url">http://aka.ms/azmetwitter</string>
+  <string name="drawer_demo_app_url">http://aka.ms/azmeandroiddemoapp</string>
+
+  <!-- Helpful links -->
+  <string name="helpful_link_documentation_url">http://aka.ms/azmedoclanding</string>
+  <string name="helpful_link_pricing_url">http://aka.ms/azmepricing</string>
+  <string name="helpful_link_sla_url">http://aka.ms/azmesla</string>
+  <string name="helpful_link_msdn_forum_url">http://aka.ms/azmemsdnforum</string>
+  <string name="helpful_link_user_voice_forum_url">	http://aka.ms/azmeuservoice</string>
+
+  <!-- ws -->
+  <string name="videos_url">https://aka.ms/azmevideosfile</string>
+  <string name="recent_product_updates_url">https://aka.ms/azmerssfeed</string>
+
+  <!-- About links -->
+  <string name="smartnsoft_url">http://smartnsoft.com</string>
+  <string name="github_url">http://aka.ms/azmeandroiddemoappsource</string>
+  <string name="application_license_url">http://aka.ms/azmedemoapplicense</string>
+  <string name="third_party_notices_url">http://aka.ms/azmedemoappandroidnotices</string>
+
+</resources>

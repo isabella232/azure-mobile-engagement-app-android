@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<resources>
+
+  <dimen name="dimen1dip">1dip</dimen>
+  <dimen name="dimen2dip">2dip</dimen>
+  <dimen name="dimen3dip">3dip</dimen>
+  <dimen name="dimen5dip">5dip</dimen>
+  <dimen name="dimen6dip">6dip</dimen>
+  <dimen name="dimen7dip">7dip</dimen>
+  <dimen name="dimen8dip">8dip</dimen>
+  <dimen name="dimen10dip">10dip</dimen>
+  <dimen name="dimen12dip">12dip</dimen>
+  <dimen name="dimen13dip">13dip</dimen>
+  <dimen name="dimen15dip">15dip</dimen>
+  <dimen name="dimen16dip">16dip</dimen>
+  <dimen name="dimen20dip">20dip</dimen>
+  <dimen name="dimen25dip">25dip</dimen>
+  <dimen name="dimen30dip">30dip</dimen>
+  <dimen name="dimen35dip">35dip</dimen>
+  <dimen name="dimen40dip">40dip</dimen>
+  <dimen name="dimen55dip">55dip</dimen>
+
+  <!-- Default screen margins, per the Android Design guidelines. -->
+  <dimen name="activity_horizontal_margin">@dimen/dimen15dip</dimen>
+  <dimen name="activity_vertical_margin">@dimen/dimen15dip</dimen>
+
+  <!-- Home dimensions -->
+  <dimen name="home_title_size">20dip</dimen>
+  <dimen name="home_subtitle_size">15dip</dimen>
+  <dimen name="home_recent_updates_size">20dip</dimen>
+  <dimen name="home_highlights_size">20dip</dimen>
+
+  <!-- Elevation -->
+  <dimen name="card_elevation">2dip</dimen>
+
+  <!-- Button -->
+  <dimen name="button_radius">3dip</dimen>
+
+</resources>

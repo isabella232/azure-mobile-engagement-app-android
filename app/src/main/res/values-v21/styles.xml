@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<resources>
+
+  <!-- Base styles -->
+  <style
+    name="Widget.TextView.Regular"
+    parent="android:Widget.Material.TextView"
+  >
+    <item name="android:fontFamily">sans-serif</item>
+  </style>
+
+  <style
+    name="Widget.TextView.Light"
+    parent="android:Widget.Material.TextView"
+  >
+    <item name="android:fontFamily">sans-serif-light</item>
+  </style>
+
+  <style
+    name="Widget.TextView.Medium"
+    parent="android:Widget.Material.TextView"
+  >
+    <item name="android:fontFamily">sans-serif-medium</item>
+  </style>
+
+
+  <style
+    name="Widget.Button.Regular"
+    parent="android:Widget.Material.Button"
+  >
+    <item name="android:fontFamily">sans-serif</item>
+    <item name="android:elevation">@dimen/dimen10dip</item>
+  </style>
+
+  <style
+    name="Widget.Button.Medium"
+    parent="android:Widget.Material.Button"
+  >
+    <item name="android:fontFamily">sans-serif-medium</item>
+    <item name="android:elevation">@dimen/dimen10dip</item>
+  </style>
+  <!-- -->
+
+</resources>

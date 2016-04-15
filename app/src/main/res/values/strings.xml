@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<resources>
+
+  <string name="app_name">Azure Mobile Engagement</string>
+
+  <string name="navigation_drawer_open">Open navigation drawer</string>
+  <string name="navigation_drawer_close">Close navigation drawer</string>
+
+  <string name="basis_content_description"/>
+
+  <!-- Generic -->
+  <string name="notifications_footer_mention_text">Displays sample notification text</string>
+  <string name="notifications_footer_text">Click here for instructions on how to send these notifications from Mobile Engagement platform</string>
+  <string name="negative_button">Cancel</string>
+  <string name="positive_button">OK</string>
+  <string name="close_button">Close</string>
+
+  <!-- Error view -->
+  <string name="refresh">Refresh</string>
+  <string name="action_retry">Please click the \"Refresh\" button to try displaying the content again</string>
+  <string name="error_message">An error occurred while loading the screen</string>
+
+  <!-- Menu strings -->
+  <string name="menu_home_title">Home</string>
+  <string name="menu_section_product_resources">Product Resources</string>
+  <string name="menu_features_title">Features</string>
+  <string name="menu_videos_title">Videos</string>
+  <string name="menu_helpful_links_title">Helpful links</string>
+  <string name="menu_recent_product_updates_title">Recent Product updates</string>
+  <string name="menu_twitter_title">Twitter</string>
+  <string name="menu_application_backend_title">Application backend</string>
+  <string name="menu_get_device_id_title">Get the Device ID</string>
+  <string name="menu_section_sample_notifications">Sample Notifications</string>
+  <string name="menu_out_of_app_title">Out-of-app/Push</string>
+  <string name="menu_in_app_title">In-app</string>
+  <string name="menu_in_app_pop_up_title">In-app pop-up</string>
+  <string name="menu_full_screen_title">Full screen interstitial</string>
+  <string name="menu_web_announcement_title">Web announcement</string>
+  <string name="menu_poll_survey_title">Poll/Survey</string>
+  <string name="menu_data_push_title">Data push</string>
+  <string name="menu_about_title">About</string>
+
+  <!-- Landing screen -->
+  <string name="home_subtitle">Increase app usage and user retention</string>
+  <string name="home_title">Azure Mobile Engagement</string>
+  <string name="home_recent_updates_title">Recent updates</string>
+  <string name="home_recent_updates_view_all">View all</string>
+  <string name="home_hightlight_title">Highlights</string>
+  <string name="home_hightlight_1">Collect real-time analytics highlighting app users\' behavior</string>
+  <string name="home_hightlight_2">Measure and act on analytics using single dashboard</string>
+  <string name="home_hightlight_3">Create dynamic segments based on collected data</string>
+  <string name="home_hightlight_4">Create marketing campaigns/push notifications targeting specific segments</string>
+  <string name="home_hightlight_5">Send personalized out-of-app notifications, polls and in-app notifications with rich HTML</string>
+  <string name="home_hightlight_6">Integrate and automate with CRM/CMS/IT systems using open platform APIs</string>
+  <string name="home_hightlight_7">Find SDKs for all major platforms - iOS, Android, Windows, Windows Phone, Cordova, Xamarin, Unity</string>
+  <string name="home_feed_item_error_message">A problem occurred</string>
+
+
+  <!-- Helpful links -->
+  <string name="helpful_link_documentation">Documentation</string>
+  <string name="helpful_link_pricing">Pricing</string>
+  <string name="helpful_link_sla">Service Level Agreement (SLA)</string>
+  <string name="helpful_link_msdn_support_forum">MSDN support forum</string>
+  <string name="helpful_link_suggest_product_features">Suggest product features</string>
+
+
+  <!-- Get the device id -->
+  <string name="get_the_device_id_message">Get the Device ID and register it with the platform to receive notifications from it.</string>
+  <string name="get_the_device_id_share_button">Share</string>
+  <string name="get_the_device_id_copy_button">Copy</string>
+  <string name="get_the_device_id_share_object">Device ID</string>
+  <string name="get_the_device_id_copy_success_message">Your Device ID %s was copied</string>
+
+
+  <!-- Out-of-app / push notifications -->
+  <string name="out_of_app_push_notifications_message">Product update notification using out-of-app/Push notification</string>
+  <string name="out_of_app_push_notifications_notification_only_title">Display a \"notification only\"</string>
+  <string name="out_of_app_push_notifications_notification_only_message">Clicking on the notification will open up a native screen of the app</string>
+  <string name="out_of_app_push_notifications_announcement_title">Display an \"announcement\"</string>
+  <string name="out_of_app_push_notifications_announcement_message">Clicking on the notification will open up additional dynamic web view content</string>
+  <string name="out_of_app_push_notifications_dialog_title">What type of notification do you want to display?</string>
+  <string name="out_of_app_push_notifications_notification_announcement_dialog_icon_title_message">Icon + Title + Message</string>
+  <string name="out_of_app_push_notifications_notification_announcement_dialog_icon_title_message_big_text">Icon + Title + Message +\nBig Text</string>
+  <string name="out_of_app_push_notifications_notification_announcement_dialog_icon_title_message_big_picture">Icon + Title + Message +\nBig Picture</string>
+
+  <string name="out_of_app_push_notification_content_title">New product update</string>
+  <string name="out_of_app_push_notification_content_message">Click to see the recent product updates!</string>
+  <string name="out_of_app_push_notification_content_big_text">We are constantly adding exciting new features &amp; improvements to Azure Mobile Engagement…</string>
+
+  <!-- In-app notifications -->
+  <string name="in_app_notifications_message">Product update notification using in-app notification </string>
+  <string name="in_app_notifications_notification_only_title">Display a \"Notification only\"</string>
+  <string name="in_app_notifications_notification_only_message">@string/out_of_app_push_notifications_notification_only_message</string>
+  <string name="in_app_notifications_announcement_title">Display an \"Announcement\"</string>
+  <string name="in_app_notifications_announcement_message">@string/out_of_app_push_notifications_announcement_message</string>
+  <string name="in_app_notifications_notification_title">@string/out_of_app_push_notification_content_title</string>
+  <string name="in_app_notifications_notification_message">@string/out_of_app_push_notification_content_message</string>
+
+  <!-- In-app coupon notification -->
+  <string name="in_app_coupon_notification_message">Coupon notification using in-app pop-up</string>
+  <string name="in_app_coupon_notification_display_title">Display an In-app pop-up</string>
+  <string name="in_app_coupon_notification_dialog_title">Get 20% off on your purchase</string>
+  <string name="in_app_coupon_notification_dialog_description">Use coupon code 59AXDC when checking out</string>
+
+  <!-- Full screen interstitial -->
+  <string name="full_screen_interstitial_message">Deal of the day notification using full screen interstitial</string>
+  <string name="full_screen_interstitial_display_title">Display a full screen interstitial</string>
+  <string name="full_screen_interstitial_dialog_announcement_title">Deal of the day</string>
+  <string name="full_screen_interstitial_dialog_announcement_message">15% discount on the AdventureWorks Race Bike</string>
+  <string name="full_screen_interstitial_dialog_announcement_body">
+    <![CDATA["
+    <html>
+      <head>
+        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>
+        <link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\"/>
+        <link href=\"https://fonts.googleapis.com/css?family=Roboto:300,400,700\" rel=\"stylesheet\" type=\"text/css\"/>
+      </head>
+      <body>
+        <img id=\"product\" src=\"images/adventureworks_bicycle.png\" alt=\"\" width=\"250px\" height=\"153px\" />
+        <div id=\"name\">AdventureWorks Race Bike</div>
+        <div id=\"price\">$899.00</div>
+        <div id=\"price_with_promotion\">$764.00</div>
+        </br>
+        <div id=\"promotion\">15% off</div>
+      </body>
+    </html>
+  "]]>
+  </string>
+
+  <!-- Web announcement -->
+  <string name="web_announcement_message">Deal of the day notification using web announcement</string>
+  <string name="web_announcement_display_title">Display a web announcement</string>
+
+
+  <!-- Poll -->
+  <string name="poll_mention_text">A sample poll/survey notification</string>
+  <string name="poll_message">Get users feedback using poll notification</string>
+  <string name="poll_display_title">Display a poll notification</string>
+  <string name="poll_notification_title">Product feedback</string>
+  <string name="poll_notification_message">Click here to provide quick feedback about the app</string>
+
+  <!-- Data push notification -->
+  <string name="data_push_notification_message">Apply customized pricing using silent data push</string>
+  <string name="data_push_notification_display_title">Silent Data push notification</string>
+  <string name="data_push_notification_footer_mention_text">Displays fictitious product on the Data push screen</string>
+
+  <!-- Product -->
+  <string name="product_title">Product</string>
+  <string name="product_name">AdventureWorks Race Bike</string>
+  <string name="product_prize_title">Starting at</string>
+  <string name="product_prize">$899.00</string>
+  <string name="product_purchase_text_1">20% off on your purchase</string>
+  <string name="product_purchase_text_2">Use coupon code 59AXDC when checking out</string>
+
+  <!-- Product discount -->
+  <string name="product_discount_title">Product discount</string>
+  <string name="product_discount_apply_discount_title">Apply discount using silent data push</string>
+  <string name="product_discount_remove_discount_title">Remove discount using silent data push</string>
+  <string name="percent_sign">&#x0025;</string>
+  <string name="product_discount">%1$s%2$s off</string>
+
+  <!-- Rebound -->
+  <string name="rebound_title">Recent update</string>
+  <string name="rebound_notification_title">New product update</string>
+  <string name="rebound_notification_body">
+    <![CDATA["
+      <html>
+        <head>
+          <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>
+          <link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\"/>
+          <link href=\"https://fonts.googleapis.com/css?family=Roboto:300,400,700\" rel=\"stylesheet\" type=\"text/css\"/>
+        </head>
+        <body>
+          <img src=\"images/azme_app_logo.png\" alt=\"\" width=\"110px\" height=\"110px\" />
+          <div id=\"blue_separator\"></div>
+          <p> <b> Azure Mobile Engagement </b> is a software-as-a-service (SaaS) user-engagement platform that provides data-driven insights into app usage, real-time user segmentation, and enables contextually-aware push notifications and in-app messaging.</p>
+        </body>
+      </html>
+    "]]>
+  </string>
+
+  <!-- New poll -->
+  <string name="new_poll_title">New poll</string>
+  <string name="new_poll_description">Click this to take a quick 30 second survey!</string>
+  <string name="new_poll_question_title_1">Did you find this app useful?</string>
+  <string name="new_poll_question_title_2">Would you recommend this app to your colleagues?</string>
+  <string name="new_poll_question_yes">Yes</string>
+  <string name="new_poll_question_no">No</string>
+  <string name="new_poll_submit_title">Submit</string>
+
+  <!-- New poll end -->
+  <string name="new_poll_end_message">Thank you for responding!</string>
+
+  <!-- How to send these notifications -->
+  <string name="how_to_send_these_notification_out_of_app_title">How to send out-of-app/push</string>
+  <string name="how_to_send_these_notification_in_app_title">How to send in-app</string>
+  <string name="how_to_send_these_notification_in_app_popup_title">How to send in-app pop-up</string>
+  <string name="how_to_send_these_notification_full_screen_interstitial_title">How to send full screen interstitial</string>
+  <string name="how_to_send_these_notification_web_announcement_title">How to send web announcement</string>
+  <string name="how_to_send_these_notification_poll_title">How to send poll</string>
+  <string name="how_to_send_these_notification_data_push_title">How to send silent data push </string>
+
+  <!-- Notifier -->
+  <string name="notification_feedback_button_title">Feedback</string>
+  <string name="notification_share_button_title">Share</string>
+  <string name="notification_feedback_email_subject">Feedback about the recent update</string>
+  <string name="notification_share_message">Product feedback</string>
+
+</resources>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+  <!-- Base styles -->
+  <style
+    name="Widget.TextView.Regular"
+    parent="android:Widget.Holo.TextView"
+  >
+    <item
+      name="android:fontFamily"
+      tools:targetApi="JELLY_BEAN"
+    >
+      sans-serif
+    </item>
+  </style>
+
+  <style
+    name="Widget.TextView.Light"
+    parent="android:Widget.Holo.TextView"
+  >
+    <item
+      name="android:fontFamily"
+      tools:targetApi="JELLY_BEAN"
+    >
+      sans-serif-light
+    </item>
+  </style>
+
+  <style
+    name="Widget.TextView.Medium"
+    parent="android:Widget.Holo.TextView"
+  >
+    <item
+      name="android:fontFamily"
+      tools:targetApi="JELLY_BEAN"
+    >
+      sans-serif-medium
+    </item>
+  </style>
+
+  <style
+    name="Widget.Button.Regular"
+    parent="android:Widget.Holo.Button"
+  >
+    <item
+      name="android:fontFamily"
+      tools:targetApi="JELLY_BEAN"
+    >
+      sans-serif
+    </item>
+  </style>
+
+  <style
+    name="Widget.Button.Medium"
+    parent="android:Widget.Holo.Button"
+  >
+    <item
+      name="android:fontFamily"
+      tools:targetApi="JELLY_BEAN"
+    >
+      sans-serif-medium
+    </item>
+  </style>
+  <!-- -->
+
+  <!-- TextView -->
+  <style
+    name="Widget.TextView.White.Normal"
+    parent="Widget.TextView.Regular"
+  >
+    <item name="android:textColor">@color/textColorPrimary</item>
+  </style>
+
+  <style
+    name="Widget.TextView.Home.Title"
+    parent="Widget.TextView.Regular"
+  >
+    <item name="android:textColor">@color/textColorPrimary</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">@dimen/home_title_size</item>
+  </style>
+
+  <style
+    name="Widget.TextView.Home.Subtitle"
+    parent="Widget.TextView.Medium"
+  >
+    <item name="android:textColor">@color/textColorPrimary</item>
+    <item name="android:textSize">@dimen/home_subtitle_size</item>
+    <item name="android:gravity">center_horizontal</item>
+  </style>
+
+  <style
+    name="Widget.TextView.White.Highlight"
+    parent="Widget.TextView.Medium"
+  >
+    <item name="android:gravity">left</item>
+    <item name="android:textColor">@color/textColorPrimary</item>
+    <item name="android:textSize">13dip</item>
+    <item name="android:paddingTop">2.5dip</item>
+    <item name="android:paddingBottom">2.5dip</item>
+    <item name="android:drawablePadding">10dip</item>
+    <item name="android:drawableLeft">@drawable/ic_done</item>
+  </style>
+
+  <style
+    name="Widget.TextView.Blue"
+    parent="Widget.TextView.White.Normal"
+  >
+    <item name="android:textColor">@color/colorPrimary</item>
+    <item name="android:gravity">left</item>
+    <item name="android:textSize">14dip</item>
+  </style>
+
+  <style
+    name="Widget.TextView.GeneralTextColor"
+    parent="Widget.TextView.Regular"
+  >
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">16dip</item>
+    <item name="android:textColor">@color/generalTextColor</item>
+  </style>
+  <style
+    name="Widget.TextView.SecondaryTextColor"
+    parent="Widget.TextView.Regular"
+  >
+    <item name="android:textSize">16dip</item>
+    <item name="android:textColor">@color/secondaryTextColor</item>
+  </style>
+
+  <style
+    name="Widget.TextView.SmallMentionColor"
+    parent="Widget.TextView.Regular"
+  >
+    <item name="android:textSize">13dip</item>
+    <item name="android:textColor">@color/smallMentionColor</item>
+  </style>
+
+  <style
+    name="Widget.TextView.Item.Title.Video"
+    parent="Widget.TextView.Regular"
+  >
+    <item name="android:textSize">16dip</item>
+    <item name="android:textColor">@color/colorPrimary</item>
+  </style>
+
+  <style
+    name="Widget.TextView.Item.Title.RcentUpdate"
+    parent="Widget.TextView.Medium"
+  >
+    <item name="android:textSize">16dip</item>
+    <item name="android:textColor">@color/generalTextColor</item>
+  </style>
+
+  <style
+    name="Widget.TextView.Item.Title.HelfulLink"
+    parent="Widget.TextView.Regular"
+  >
+    <item name="android:textSize">16dip</item>
+    <item name="android:textColor">@color/generalTextColor</item>
+  </style>
+
+  <style
+      name="Widget.TextView.GetDevice.Message"
+      parent="Widget.TextView.Regular"
+  >
+    <item name="android:textColor">@color/generalTextColor</item>
+    <item name="android:textSize">@dimen/dimen20dip</item>
+  </style>
+
+  <style
+    name="Widget.TextView.Push.Message"
+    parent="Widget.TextView.Regular"
+  >
+    <item name="android:textColor">@color/textColorPrimary</item>
+    <item name="android:textSize">@dimen/dimen20dip</item>
+  </style>
+
+  <style
+    name="Widget.TextView.Push.SmallMessage"
+    parent="Widget.TextView.Regular"
+  >
+    <item name="android:textColor">@color/textColorPrimary</item>
+    <item name="android:textSize">@dimen/dimen12dip</item>
+    <item name="android:textStyle">italic</item>
+    <item name="android:gravity">left</item>
+    <item name="android:layout_gravity">center_horizontal</item>
+  </style>
+
+  <style
+    name="Widget.TextView.Push.FooterText"
+    parent="Widget.TextView.Medium"
+  >
+    <item name="android:textColor">@color/textColorPrimary</item>
+    <item name="android:textSize">14dip</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_gravity">center_horizontal</item>
+    <item name="android:layout_margin">@dimen/dimen15dip</item>
+  </style>
+
+  <style
+    name="Widget.TextView.Product.Name"
+    parent="Widget.TextView.Light"
+  >
+    <item name="android:textColor">@color/generalTextColor</item>
+    <item name="android:textSize">@dimen/dimen35dip</item>
+  </style>
+
+  <style
+    name="Widget.TextView.Product.Description"
+    parent="Widget.TextView.Regular"
+  >
+    <item name="android:textColor">@color/generalTextColor</item>
+    <item name="android:textSize">@dimen/dimen16dip</item>
+  </style>
+
+  <style
+    name="Widget.TextView.Product.Prize"
+    parent="Widget.TextView.Light"
+  >
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">@dimen/dimen30dip</item>
+  </style>
+
+  <style
+    name="Widget.TextView.Product.Prize.Title"
+    parent="Widget.TextView.Medium"
+  >
+    <item name="android:textColor">@color/smallMentionColor</item>
+    <item name="android:textSize">@dimen/dimen12dip</item>
+  </style>
+
+  <style
+    name="Widget.TextView.Product.Prize.Discount"
+    parent="Widget.TextView.Product.Prize"
+  >
+    <item name="android:textColor">@color/orange</item>
+  </style>
+
+  <style
+    name="Widget.TextView.Product.Purchase.Text.1"
+    parent="Widget.TextView.Regular"
+  >
+    <item name="android:textColor">@color/textColorPrimary</item>
+    <item name="android:textSize">@dimen/dimen16dip</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style
+    name="Widget.TextView.Product.Purchase.Text.2"
+    parent="Widget.TextView.Medium"
+  >
+    <item name="android:textColor">@color/textColorPrimary</item>
+    <item name="android:textSize">@dimen/dimen12dip</item>
+  </style>
+
+  <style
+    name="Widget.TextView.Poll.Message"
+    parent="Widget.TextView.Regular"
+  >
+    <item name="android:textColor">@color/textColorPrimary</item>
+    <item name="android:textSize">@dimen/dimen20dip</item>
+    <item name="android:gravity">center</item>
+  </style>
+  <!-- -->
+
+  <!-- Button -->
+  <style
+    name="Widget.Button.Normal"
+    parent="Widget.Button.Regular"
+  >
+    <item name="android:textSize">14dip</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:textStyle">normal</item>
+  </style>
+
+  <style
+    name="Widget.Button"
+    parent="Widget.Button.Medium"
+  >
+    <item name="android:textColor">@color/textColorPrimary</item>
+    <item name="android:textSize">14dip</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:paddingLeft">@dimen/dimen20dip</item>
+    <item name="android:paddingTop">@dimen/dimen20dip</item>
+    <item name="android:paddingRight">@dimen/dimen20dip</item>
+    <item name="android:paddingBottom">@dimen/dimen20dip</item>
+  </style>
+
+  <style
+    name="Widget.Button.GetDeviceID"
+    parent="Widget.Button.Regular"
+  >
+    <item name="android:textColor">@color/textColorPrimary</item>
+    <item name="android:textSize">14dip</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:paddingLeft">@dimen/dimen20dip</item>
+    <item name="android:paddingTop">@dimen/dimen20dip</item>
+    <item name="android:paddingRight">@dimen/dimen20dip</item>
+    <item name="android:paddingBottom">@dimen/dimen20dip</item>
+    <item name="android:background">@drawable/bg_ripple_blue</item>
+    <item name="android:gravity">left|center_vertical</item>
+    <item name="android:drawablePadding">@dimen/dimen20dip</item>
+  </style>
+  <!-- -->
+
+
+  <!-- AlertDialog -->
+  <style
+    name="Dialog.Alert"
+    parent="Theme.AppCompat.Light.Dialog.Alert"
+  >
+    <item name="colorAccent">@color/colorPrimary</item>
+    <item name="android:colorAccent" tools:targetApi="LOLLIPOP">@color/colorPrimary</item>
+  </style>
+  <!-- -->
+
+  <!-- RadioButton -->
+  <style
+    name="Widget.CompoundButton.RadioButton"
+    parent="@android:style/Widget.CompoundButton.RadioButton"
+  >
+    <item name="android:button">@drawable/bg_radio_button</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:textSize">@dimen/dimen16dip</item>
+    <item name="android:paddingLeft">@dimen/dimen10dip</item>
+    <item name="android:paddingRight">@dimen/dimen10dip</item>
+    <item name="android:background">@drawable/divider_radio_button</item>
+  </style>
+  <!-- -->
+
+</resources>

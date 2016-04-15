@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<resources>
+
+  <string name="deeplink_product">engagement://demo/product</string>
+  <string name="deeplink_recent_product_updates">engagement://demo/recent_updates</string>
+  <string name="deeplink_rebound">engagement://demo/rebound</string>
+  <string name="deeplink_interstitial">https://aka.ms/azmefeatures</string>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<vector
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:width="38.75dp"
+  android:height="43dp"
+  android:viewportWidth="38.75"
+  android:viewportHeight="43"
+>
+  <path
+    android:fillColor="#3FFFFFFF"
+    android:pathData="M17.122,36.274 L23.639,36.274 A4.776,4.776,0,1,1,14.52,38.609
+      A2.62,2.62,0,0,1,17.12,36.274 L17.12,36.274 Z M19.375,0
+      A11.573,11.573,0,0,1,30.94,11.582 A21.6,21.6,0,0,0,36.7,26.3
+      A9.246,9.246,0,0,1,38.75,32.118 L38.75,33 L0,33 L0,32.117
+      A9.247,9.247,0,0,1,2.05,26.3 A21.6,21.6,0,0,0,7.81,11.581
+      A11.574,11.574,0,0,1,19.375,0 L19.375,0 Z"
+  />
+</vector>
