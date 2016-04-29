@@ -103,7 +103,7 @@ public final class HomeFragment
       @Override
       protected void onPostExecute(AsyncTaskResult<List<FeedItem>> result)
       {
-        if (result.getError() != null)
+        if (result.getError() != null || result.getResult().size() == 0)
         {
           feedItemContainer.setVisibility(View.VISIBLE);
           errorContainer.setVisibility(View.VISIBLE);

@@ -33,8 +33,7 @@ Test locally the emulation of the SDK or create your own AzME campaigns to test 
 
 
 ```
-    <activity
-      android:name=".ReboundFullScreenInterstitialActivity"
+    <activity android:name=".ReboundFullScreenInterstitialActivity"
     >
       <intent-filter>
         <action android:name="com.microsoft.azure.engagement.reach.intent.action.ANNOUNCEMENT"/>

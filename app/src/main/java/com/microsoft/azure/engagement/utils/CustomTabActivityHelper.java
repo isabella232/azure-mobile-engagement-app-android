@@ -25,6 +25,7 @@ import android.support.customtabs.CustomTabsIntent;
 import android.support.customtabs.CustomTabsServiceConnection;
 import android.support.customtabs.CustomTabsSession;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
 
 import com.microsoft.azure.engagement.R;
 import com.microsoft.azure.engagement.engagement.AzmeTracker;
@@ -37,6 +38,8 @@ import com.microsoft.azure.engagement.utils.CustomTabsHelper.ServiceConnectionCa
 public final class CustomTabActivityHelper
     implements ServiceConnectionCallback
 {
+
+  private static final String TAG = CustomTabActivityHelper.class.getSimpleName();
 
   private CustomTabsSession customTabsSession;
 
@@ -58,18 +61,25 @@ public final class CustomTabActivityHelper
   public static final void openCustomTab(Activity activity, Uri uri, String eventName, String eventTitle,
       String eventUrl)
   {
-    final String packageName = CustomTabsHelper.getPackageNameToUse(activity);
-    final CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
-    builder.setToolbarColor(ContextCompat.getColor(activity, R.color.customTabColor));
-    builder.enableUrlBarHiding();
-    builder.setCloseButtonIcon(BitmapFactory.decodeResource(activity.getResources(), R.drawable.ic_arrow_back));
-    builder.setStartAnimations(activity, R.anim.slide_in_right, R.anim.slide_out_left);
-    builder.setExitAnimations(activity, android.R.anim.slide_in_left, android.R.anim.slide_out_right);
-    final CustomTabsIntent customTabsIntent = builder.build();
-    customTabsIntent.intent.setPackage(packageName);
-    customTabsIntent.launchUrl(activity, uri);
+    try
+    {
+      final String packageName = CustomTabsHelper.getPackageNameToUse(activity);
+      final CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+      builder.setToolbarColor(ContextCompat.getColor(activity, R.color.customTabColor));
+      builder.enableUrlBarHiding();
+      builder.setCloseButtonIcon(BitmapFactory.decodeResource(activity.getResources(), R.drawable.ic_arrow_back));
+      builder.setStartAnimations(activity, R.anim.slide_in_right, R.anim.slide_out_left);
+      builder.setExitAnimations(activity, android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+      final CustomTabsIntent customTabsIntent = builder.build();
+      customTabsIntent.intent.setPackage(packageName);
+      customTabsIntent.launchUrl(activity, uri);
 
-    AzmeTracker.sendEventForCustomTab(activity, eventName, eventTitle, eventUrl);
+      AzmeTracker.sendEventForCustomTab(activity, eventName, eventTitle, eventUrl);
+    }
+    catch (Exception exception)
+    {
+      Log.w(CustomTabActivityHelper.TAG, "Cannot launch the uri '" + uri + "'");
+    }
   }
 
   /**
