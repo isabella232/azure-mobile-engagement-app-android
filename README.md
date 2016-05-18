@@ -1,16 +1,16 @@
-# Azure Mobile Engagement Android App
+﻿# Azure Mobile Engagement Android App
 
 The Android Azure Mobile Engagement application.
 
 Increase app usage and user retention with Azure Mobile Engagement.
 
 - Collect real-time analytics that highlight users’ behavior
-- Measure and act on analytics using single dashboard
+- Measure and act on analytics using a single dashboard
 - Create dynamic segments based on collected data
 - Create marketing campaigns/push notifications targeting specific segments
 - Send personalized out-of-app notifications, polls, and in-app notifications with rich HTML
 - Integrate and automate with CRM/CMS/IT systems using open-platform APIs
-- Find SDKs for all major platforms—iOS, Android, Windows, Windows Phone
+- Find SDKs for all major platforms: iOS, Android, Windows, Windows Phone
 
 ![image](./AzME_Demo.png) ![image](./AzME_Demo2.png)
 
@@ -72,7 +72,7 @@ You have to configure an Endpoint otherwise you cannot test the app correctly wi
 
 Official documentation is available on [Azure Mobile Engagement Website](https://azure.microsoft.com/en-us/documentation/services/mobile-engagement/)
 
-## Licence : MIT
+## License : MIT
 
 Azure Mobile Engagement App
 Copyright (c) Microsoft Corporation
