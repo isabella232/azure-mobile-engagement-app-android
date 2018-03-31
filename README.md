@@ -1,4 +1,6 @@
-﻿# Azure Mobile Engagement Android App
+# Azure Mobile Engagement service has been retired and is no longer available.    
+
+# Azure Mobile Engagement Android App
 
 The Android Azure Mobile Engagement application.
 
